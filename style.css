@@ -1,0 +1,348 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins');
+
+/* Global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.3s ease-in;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+.active {
+    color: rgb(20, 30, 75);
+    font-weight: bold;
+    text-decoration: underline;
+}
+body {
+    overflow-x: hidden;
+}
+
+/* Navbar */
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    color: whitesmoke;
+    position: fixed;
+    background: rgb(20, 30, 75,0.3);
+    animation: slidein 1s;
+    
+}
+.navbar .logo {
+    font-size: 5vmin;
+    animation: changingColor 4s;
+    font-family: 'Poppins', sans-serif;
+}
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+.nav-links li {
+    margin: 0 30px;
+}
+li a {
+    color: whitesmoke;
+    font-size: 2.5vmin;
+}
+
+
+header {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(mayon.webp);
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.header-content {
+    margin-bottom: 150px;
+    color: whitesmoke;
+    text-align: center;
+}
+.header-content h2 {
+    font-size: 4vmin;
+}
+.line {
+    width: 180px;
+    height: 4px;
+    background-color: rgb(20, 30, 75);
+    margin: 10px auto;
+    border-radius: 5px;
+}
+.header-content h1 {
+    font-size: 7vmin;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.ctn {
+    padding: 8px 15px;
+    background-color: rgb(20, 30, 75);
+    border-radius: 30px;
+    color: whitesmoke;
+}
+.menu-btn {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    width: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+/* Events */
+section {
+    width: 80%;
+    margin: 80px auto;
+}
+.title {
+    text-align: center;
+    font-size: 4vmin;
+    color: rgb(44, 39, 114);
+}
+.row {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+.row .col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.events .row {
+    margin-top: 50px;
+}
+h4 {
+    font-size: 3vmin;
+    color: rgb(44, 39, 114);
+    margin: 20px auto;
+}
+p {
+    font-size: 3vmin;
+    color: rgb(44, 39, 114);
+    padding: 0px 20px;
+}
+.events .ctn {
+    margin-top: 30px;
+}
+
+.explore {
+    width: 100%;
+    height: 100vh;
+    background-image: url(mayonn.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+.explore-content {
+    width: 50%;
+    padding: 50px;
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.explore-content h1 {
+    font-size: 7vmin;
+    margin: 5px;
+}
+.explore-content .line {
+    margin-bottom: 50px;
+}
+.explore-content p {
+    font-size: 3vmin;
+    color: rgb(241, 241, 241);
+}
+.explore-content .ctn {
+    margin-top: 40px;
+    background: rgb(145, 105, 238);
+}
+.content-col {
+    width: 40%;
+}
+.image-col {
+    width: 60%;
+}
+.tours .image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+}
+.image-gallery img {
+    max-width: 300px;
+    width: 230px;
+    margin: 6px;
+}
+.content-col h1{
+    font-size: 7vmin;
+    color: rgb(44, 39, 114);
+}
+.content-col .line {
+    margin-left: -1px;
+}
+.content-col p {
+    padding: 0;
+    margin: 30px auto;
+    color: rgb(44, 39, 114);
+}
+.content-col .ctn {
+    margin-left: -100px;
+}
+
+.footer{
+    width: 100%;
+    min-height: 100px;
+    padding: 20px 80px;
+    margin: 0;
+    background: rgb(34, 46, 80);
+    text-align: center;
+} 
+.footer p {
+    color: whitesmoke;
+    font-size: 3vmin;
+    margin: 20px 0;
+    padding: 20px auto;
+}
+.footer .logo {
+    font-size: 6vmin;
+    color: whitesmoke;
+}
+.footer .tagline {
+    font-family: 'Raleway', sans-serif;
+    color: whitesmoke;
+    margin-bottom: 8%;
+}
+.footer .tag {
+    color: rgb(78, 162, 240);
+}
+
+/* Mobile device */
+@media only screen and (max-width: 850px) {
+    .menu-btn {
+        display: block;
+    }
+    .navbar {
+        padding: 0;
+    }
+    .logo {
+        position: absolute;
+        top:30px;
+        left: 30px;
+        animation: changeColor 2s;
+    }
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        background: linear-gradient(90deg, rgb(145, 105, 238), rgb(96, 96, 211));
+        margin-top: -900px;
+        border-radius: 0 0 30%;
+        transition: all 0.5s ease !important;
+        font-size: 5vmin;
+    }
+    .mobile-menu {
+        margin-top: 0px;
+    }
+    .nav-links li {
+        margin: 30px auto;
+    }
+    li a {
+        font-size: 6vmin;
+    }
+
+    /* Events */
+    .row {
+        flex-direction: column;
+    }
+    .row .col {
+        margin: 20px auto;
+    }
+    .col img {
+        max-width: 90%;
+    }
+
+    /* Explore Content */
+    .explore-content {
+        width: 100%;
+    }
+    .explore .line {
+        margin-left: 300px;
+    }
+    .tours .col {
+        width: 100%;
+    }
+    .tours .ctn {
+        margin-right: 470px;
+    }
+    .image-gallery {
+        justify-content: center;
+        align-items: center;
+    }
+    .image-gallery img {
+        width: 100%;
+        margin-bottom: 10px;
+
+    }
+    .footer {
+        padding: 10px;
+    }
+    .navbar a:hover {
+        font-size: 8vmin !important;
+    }
+}
+
+/* Annimations */
+img {
+    transition: transform 0.3s ease-in-out !important;
+}
+img:hover {
+    transform: scale(1.1);
+}
+.ctn:hover {
+    background: whitesmoke;
+    color: rgb(44, 39, 114);
+    box-shadow: 2px 2px 5px rgb(73, 73, 73);
+}
+.navbar a:hover {
+    cursor: pointer;
+    color: rgb(44, 39, 114);
+    font-size: 3vmin;
+}
+
+/* ANIMATION @KEYFRAMES */ 
+@keyframes changingColor {
+    0% {color: rgb(0, 0, 0)}
+    25% {color: rgb(9, 13, 32);}
+    50% {color: rgb(20, 30, 75)}
+    75% {color: rgb(44, 39, 114)}
+    100% {color: rgb(145, 105, 238)}
+}
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
